@@ -1,0 +1,16 @@
+[Unit]
+Description=Xvfb X11 Display
+Documentation=man:Xvfb(1)
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconfig/xvfb
+ExecStart=/usr/bin/Xvfb $DISPLAY $OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target

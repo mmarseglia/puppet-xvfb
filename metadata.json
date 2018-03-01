@@ -1,0 +1,18 @@
+{
+  "name": "puppet-xvfb",
+  "version": "0.1.0",
+  "author": "mike@marseglia.org",
+  "summary": "This installs Xvfb and configures a service running a display on :0",
+  "license": "Apache-2.0",
+  "source": "",
+  "project_page": "",
+  "issues_url": "",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "data_provider": null
+}
+

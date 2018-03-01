@@ -1,0 +1,4 @@
+# Configuration file for the xvfb service.
+
+DISPLAY=':0'
+OPTIONS='-ac -screen 0 1024x768x8 -nolisten tcp'
